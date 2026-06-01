@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,9 @@
 </head>
 
 <body>
+
     <h1>Seznamy Tabulky</h1>
+
     <h2>Tvorba Seznamů</h2>
 
     <h3>USPOŘÁDANÝ SEZNAM (ORDERED LIST)</h3>
@@ -50,6 +53,7 @@
                 </li>
             </ol>
         </li>
+
         <li>Software
             <ol type="I">
                 <li>Základní programové vybavení
@@ -78,23 +82,79 @@
         <dt><strong>World Wide Web Consortium (W3C)</strong></dt>
         <dd>Mezinárodní konsorcium, jehož členové společně s veřejností vyvíjejí webové standardy pro službu WWW.</dd>
 
-        <dt><strong>Internet Society (ISOC)</strong></dt>
+        <dt><strong>Internet Assigned Numbers Authority (IANA)</strong></dt>
         <dd>Organizace, která dohlíží celosvětově na přidělování IP adres, správu kořenových zón DNS, definování typů médií pro MIME a další náležitosti internetových protokolů.</dd>
     </dl>
 
-    <header></header>
+    
 
     <main>
         <h2>Tvorba tabulek</h2>
-        <p>Komplexní tabulka v HTML může být vytvořena záhlavím, tělem a zápatím.
-        Pomocí atributů <strong>colspan</strong> a <strong>rowspan</strong>
-        můžeme vytvořit sloučené buňky, které přesahují přes více sloupců i řádků.</p>
+
+        <p>
+            Komplexní tabulka v HTML může být vytvořena záhlavím, tělem a zápatím.
+            Pomocí atributů <strong>colspan</strong> a <strong>rowspan</strong>
+            můžeme vytvořit sloučené buňky, které přesahují přes více sloupců i řádků.
+        </p>
 
         <table>
-            <!-- zbytek tabulky beze změny -->
+            <caption>Studijní obory na SŠPU Opava - školní rok 2019/17</caption>
+
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="col">Název oboru</th>
+                    <th rowspan="2" scope="col">Kód oboru</th>
+                    <th rowspan="2" scope="col">Počet tříd</th>
+                    <th colspan="3" scope="col">Počty žáků</th>
+                </tr>
+                <tr>
+                    <th scope="col">Chlapci</th>
+                    <th scope="col">Dívky</th>
+                    <th scope="col">Celkem</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="text-right">Informační technologie</td>
+                    <td class="text-right">18-20-M/01</td>
+                    <td class="text-right">4</td>
+                    <td class="text-right">104</td>
+                    <td class="text-right">1</td>
+                    <td class="text-right">105</td>
+                </tr>
+
+                <tr>
+                    <td class="text-right">Strojírenství</td>
+                    <td class="text-right">23-41-M/01</td>
+                    <td class="text-right">5</td>
+                    <td class="text-right">135</td>
+                    <td class="text-right">1</td>
+                    <td class="text-right">136</td>
+                </tr>
+
+                <tr>
+                    <td class="text-right">Umělecké obory</td>
+                    <td class="text-right">82-41-M/04, 82-41-M/05, 82-41-M/08</td>
+                    <td class="text-right">4</td>
+                    <td class="text-right">20</td>
+                    <td class="text-right">74</td>
+                    <td class="text-right">94</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2">Celkové údaje</td>
+                    <td class="cervena">13 tříd</td>
+                    <td colspan="3" class="cervena">335 žáků</td>
+                </tr>
+            </tfoot>
         </table>
     </main>
 
     <footer></footer>
+
 </body>
+
 </html>
